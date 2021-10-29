@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Pizza",
+        "decription": "Order your favourite Pizza in Dhaka with Fitmeal ✓ Super fast food delivery to your home or office ✓ Safe & easy payment options.",
+        "img": "https://image.freepik.com/free-photo/pepperoni-pizza-isolated-white_317111-21.jpg",
+        "id": 1
+    },
+    {
+        "name": "Burger",
+        "decription": "Order your favourite Burgers in Dhaka with Fitmeal ✓ Super fast food delivery to your home or office ✓ Safe & easy payment options.",
+        "img": "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/zeesmhczd1iijkcl1wym",
+        "id": 2
+    },
+    {
+        "name": "Kacchi",
+        "decription": "Order at Kacchi Bhai - Dhaka Bangladesh near you with Fitmeal ✓ Delivery to your home or office ✓ Safe & easy payment options.",
+        "img": "https://images.deliveryhero.io/image/fd-bd/LH/s4ve-hero.jpg",
+        "id": 3
+    },
+    {
+        "name": "Sandwich",
+        "decription": "Order at Sandwich - Dhaka Bangladesh near you with Fitmeal ✓ Delivery to your home or office ✓ Safe & easy payment options.",
+        "img": "https://img.freepik.com/free-photo/club-sandwich-with-side-french-fries_140725-1744.jpg?size=338&ext=jpg",
+        "id": 4
+    },
+    {
+        "name": "Fried chicken",
+        "decription": "Order at Fried chicken - Dhaka Bangladesh near you with Fitmeal ✓ Delivery to your home or office ✓ Safe & easy payment options",
+        "img": "https://i2.wp.com/www.bharatzkitchen.com/wp-content/uploads/2018/05/chicken-leg-thumb3.jpg?fit=800%2C450&ssl=1",
+        "id": 5
+    },
+    {
+        "name": "Fucka",
+        "decription": "Order at Fucka- Dhaka Bangladesh near you with Fitmeal ✓ Delivery to your home or office ✓ Safe & easy payment options",
+        "img": "https://i.ytimg.com/vi/iiTWVCoNOjc/maxresdefault.jpg",
+        "id": 6
+    }
+]

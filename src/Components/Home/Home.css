@@ -1,0 +1,27 @@
+.slider{
+    
+    width: 100%;
+ 
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin-left: 30px  ; 
+
+}
+.service-container img{
+    height: 400px;
+    width: 400px;
+    display: block;
+}
+.service{
+    border-radius: 10px;
+    border:1px solid black;
+    padding: 15px;
+    
+
+}
+.service img{
+    margin: 0 auto;
+}
