@@ -7,29 +7,18 @@ const Header = () => {
     const { user, handleSignOut } = useFirebase()
     return (
         <div>
-
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="dark" variant="dark" fixed="top">
                 <Container>
                     <Navbar.Brand href="#home"><img className="logo" src="https://image.freepik.com/free-vector/food-delivery-man-riding-motorcycles-cartoon-art-illustration_56104-610.jpg" alt="" /><p className="d-inline ms-3 text-success fw-bold">Fitmeal</p></Navbar.Brand>
                     <Nav className="mx-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
-
-                        <Nav.Link as={Link} to="/servics">services</Nav.Link>
                         <Nav.Link as={Link} to="/servics">Contact Us</Nav.Link>
                         <Nav.Link as={Link} to="/addservice">Add Service</Nav.Link>
-                        <Nav.Link as={Link} to="/servics">Events</Nav.Link>
+                        <Nav.Link as={Link} to="/myOrders">My Orders</Nav.Link>
                     </Nav>
                     {
-
                         user.email ? <button onClick={handleSignOut} className="button-33"  >Logout</button> : <button className="button-33"  ><NavLink className="text-success text-decoration-none" to="/login">Login</NavLink> </button>
-
                     }
-
-
-
-
-
-
                 </Container>
             </Navbar>
         </div>

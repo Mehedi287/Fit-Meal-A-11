@@ -6,7 +6,7 @@
 .service-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
+    grid-gap: 30px;
     margin-left: 30px  ; 
 
 }
@@ -19,9 +19,16 @@
     border-radius: 10px;
     border:1px solid black;
     padding: 15px;
-    
+   background-color: ghostwhite; 
+   transition: all 0.5s;
 
+}
+.service:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 .service img{
     margin: 0 auto;
+}
+.delivery-man {
+border-radius: 50%;
 }

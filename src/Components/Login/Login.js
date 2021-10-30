@@ -11,7 +11,8 @@ const Login = () => {
     const [password, setPassword] = useState();
     const history = useHistory();
     const location = useLocation();
-    const redirect_uri = location.state?.form || "/addservice"
+    const redirect_uri = location.state?.from.pathname || "/home"
+    console.log(location.state);
     const getEmail = (e) => {
         const email = e.target.value;
         setEmail(email)

@@ -3,7 +3,10 @@ import { Redirect, Route } from 'react-router';
 import useAuth from '../../Hook/UseAuth';
 
 const PrivetRote = ({ children, ...rest }) => {
-    const { user } = useAuth();
+    const { user, loeading } = useAuth();
+    if (loeading) {
+        return <p>Loading...</p>
+    }
     console.log(user);
     return (
 

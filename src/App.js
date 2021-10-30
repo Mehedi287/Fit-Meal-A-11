@@ -7,8 +7,13 @@ import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import PrivetRote from './Components/PrivetRoute/PrivetRote';
-import AddUser from './Components/AddUser/AddUser';
+
 import AuthProvider from './Context/AuthProvider';
+
+import MyOrder from './Components/MyOrder/MyOrder';
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
+import AddService from './Components/AddService/AddService';
+
 
 function App() {
   return (
@@ -23,11 +28,17 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
+            <PrivetRote path="/myOrders">
+              <MyOrder></MyOrder>
+            </PrivetRote>
             <Route path="/login">
               <Login></Login>
             </Route>
             <PrivetRote path="/addservice">
-              <AddUser></AddUser>
+              <AddService></AddService>
+            </PrivetRote>
+            <PrivetRote path="/placeOrder/:id">
+              <PlaceOrder></PlaceOrder>
             </PrivetRote>
             <Route path="*">
               <NotFound></NotFound>
@@ -42,3 +53,5 @@ function App() {
 }
 
 export default App;
+
+

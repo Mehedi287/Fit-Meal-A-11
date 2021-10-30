@@ -7,6 +7,7 @@ firebaseAthuncation()
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState('');
+    const [loeading, setLoeading] = useState(true);
     const auth = getAuth();
     //--------------- google auth povider ------------------------
     const googleProvider = new GoogleAuthProvider();
@@ -55,9 +56,11 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setLoeading(false)
         })
     }, []);
     return {
+        loeading,
         user,
         error,
         signInWithGoogle,
