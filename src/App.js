@@ -14,6 +14,7 @@ import MyOrder from './Components/MyOrder/MyOrder';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import AddService from './Components/AddService/AddService';
 import ManageOrders from './Components/ManageOrders/ManageOrders';
+import ContacrUs from './Components/ContactUs/ContacrUs';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
             <PrivetRote path="/manageOrder">
               <ManageOrders></ManageOrders>
             </PrivetRote>
+            <Route path="/contact">
+              <ContacrUs></ContacrUs>
+            </Route>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

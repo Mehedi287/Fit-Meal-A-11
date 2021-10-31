@@ -1,0 +1,6 @@
+ .mapouter{position: relative; text-align: right; height: 500px; width: 600px;} 
+  /* <a href="https://www.embedgooglemap.net">google map html code</a>  */
+ .gmap_canvas {overflow: hidden; background: none!important; height: 500px; width: 600px;}  
+ .contact{
+     height: 700px;
+ }
