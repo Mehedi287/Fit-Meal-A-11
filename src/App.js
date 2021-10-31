@@ -13,6 +13,7 @@ import AuthProvider from './Context/AuthProvider';
 import MyOrder from './Components/MyOrder/MyOrder';
 import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 import AddService from './Components/AddService/AddService';
+import ManageOrders from './Components/ManageOrders/ManageOrders';
 
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
             </PrivetRote>
             <PrivetRote path="/placeOrder/:id">
               <PlaceOrder></PlaceOrder>
+            </PrivetRote>
+            <PrivetRote path="/manageOrder">
+              <ManageOrders></ManageOrders>
             </PrivetRote>
             <Route path="*">
               <NotFound></NotFound>

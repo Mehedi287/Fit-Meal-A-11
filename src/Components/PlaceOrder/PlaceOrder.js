@@ -51,7 +51,7 @@ const PlaceOrder = () => {
                             {/* register your input into the hook by invoking the "register" function */}
                             <input className="un " defaultValue={order.name} {...register("itemName")} /><br />
                             <input className="un " defaultValue={user.email} {...register("email")} /> <br />
-                            <input className="un " defaultValue={user.displayName} {...register("name")} /><br />
+                            <input className="un " defaultValue={user.displayName} {...register("uerName")} /><br />
                             <input placeholder="Address" className="un" {...register("address", { required: true })} /><br />
 
                             {/* include validation with required or other standard HTML validation rules */}

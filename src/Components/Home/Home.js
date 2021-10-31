@@ -83,41 +83,60 @@ const Home = () => {
                 </Carousel>
             </div>
             {
-                foods.length === 0 ? <Spinner className="m-4" animation="border" variant="success" /> : <div className="d-block">
-                    <h2 className="m-4">Our Services</h2>
-                    <div className="service-container">
-                        {
-                            foods.map(food => <Foods key={food.id} food={food}></Foods>)
-                        }
-                    </div>
+                foods.length === 0 ? <Spinner className="m-4" animation="border" variant="success" /> :
+                    <div className=" container-fluid">
+                        <h2 className="m-4">Our Services</h2>
+                        <div className="row g-3">
+                            {
+                                foods.map(food => <Foods key={food.id} food={food}></Foods>)
+                            }
+                        </div>
 
-                </div>
+                    </div>
             }
-            <div className="delivery-container">
+            <div className="container">
                 <h2 className="m-4">Our Delivery Man</h2>
-                <div className="row container mx-auto mb-3">
+                <div className="row g-4 mx-auto mb-3">
                     <div className="col-md-3">
-                        <img className="img-fluid delivery-man " src="https://image.freepik.com/free-photo/smiling-young-caucasian-delivery-man-red-uniform-cap-holding-pizza-packages-with-paper-food-packages-them-stretching-out-food-container-isolated-olive-green-wall_141793-112287.jpg" alt="" />
+                        <img className="img-fluid delivery-man bg-white " src="https://image.freepik.com/free-photo/delivery-concept-portrait-happy-african-american-delivery-man-red-cloth-holding-box-package-isolated-grey-studio-background-copy-space_1258-1212.jpg" alt="" />
                         <h3>Mr Binn</h3>
                     </div>
                     <div className="col-md-3">
-                        <img className="img-fluid  delivery-man" src="https://image.freepik.com/free-photo/smiling-young-caucasian-delivery-man-red-uniform-cap-holding-pizza-packages-with-paper-food-packages-them-stretching-out-food-container-isolated-olive-green-wall_141793-112287.jpg" alt="" />
+                        <img className="img-fluid  delivery-man" src="https://img.freepik.com/free-photo/young-handsome-delivery-man-with-face-mask_1258-16299.jpg?size=338&ext=jpg" alt="" />
                         <h3>Mr Binn</h3>
                     </div>
                     <div className="col-md-3">
-                        <img className="img-fluid delivery-man " src=" https://image.freepik.com/free-photo/smiling-young-caucasian-delivery-man-red-uniform-cap-holding-pizza-packages-with-paper-food-packages-them-stretching-out-food-container-isolated-olive-green-wall_141793-112287.jpg" alt="" />
+                        <img className="img-fluid delivery-man " src=" https://img.freepik.com/free-photo/young-delivery-girl-blue-uniform-cap-holding-cardboard-box-her-shoulder-smilin-showing-thumbs-up-standing-orange-wall_141793-63730.jpg?size=338&ext=jpg" alt="" />
                         <h3>Mr Binn</h3>
                     </div>
                     <div className="col-md-3">
-                        <img className="img-fluid delivery-man " src="https://image.freepik.com/free-photo/smiling-young-caucasian-delivery-man-red-uniform-cap-holding-pizza-packages-with-paper-food-packages-them-stretching-out-food-container-isolated-olive-green-wall_141793-112287.jpg" alt="" />
+                        <img className="img-fluid delivery-man " src=" https://img.freepik.com/free-psd/free-non-stop-delivery-man-pointing-box_23-2148462371.jpg?size=338&ext=jpg" alt="" />
                         <h3>Mr Binn</h3>
                     </div>
-
-
-
 
                 </div>
 
+            </div>
+            <div className="container-fluid mb-5">
+                <h2 className="m-4">Our Delivery Process</h2>
+                <div className="row g-2 mx-auto ">
+                    <div className="col-md-4 bg-white p-3 rounded">
+                        <img className="img-fluid" src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/002-checklist.png" alt="" />
+                        <h4>Your Order</h4>
+                        <p>Thank you for being valued customer. We are so grateful to serving for the honored be clients pleasure of serving hope we meets.</p>
+                    </div>
+                    <div className="col-md-4  bg-white p-3 rounded">
+                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/001-salary.png" alt="" className="img-fluid" />
+                        <h4>Cash On Delivery</h4>
+                        <p>Online food Delivery for hiring Food Foodota We appreciate your business, and we’ll do best to continue to give you the new kind.</p>
+                    </div>
+                    <div className="col-md-4 bg-white p-3 rounded">
+                        <img src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/003-box.png" alt="" className="img-fluid" />
+                        <h4>Receive Order</h4>
+                        <p>We at truly appreciate your business and we’re grateful for the trust you’ve placed in us. We sincerely hope you are satisfied </p>
+                    </div>
+
+                </div>
             </div>
 
 
