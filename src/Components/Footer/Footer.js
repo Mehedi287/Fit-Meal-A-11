@@ -9,16 +9,16 @@ const Footer = () => {
                     <img className="w-25 rounded" src="https://image.freepik.com/free-vector/food-delivery-man-riding-motorcycles-cartoon-art-illustration_56104-610.jpg" alt="" /><p className="d-inline ms-3 text-success fw-bold" alt="" />
                 </div>
                 <div className="col-md-4">
-                    <Link className="text-decoration-none text-success"><i className="far fa-envelope"></i> <span>fetmeal@gmail.com</span></Link>   <br /><br />
-                    <Link className="text-decoration-none text-success"  ><i className="fas fa-phone-alt"></i> <span>+310415130654</span></Link> <br /><br />
-                    <Link className="text-decoration-none text-success"  ><i className="fas fa-map-marker-alt"></i> <span>Dhaka Bangladesh</span></Link>
+                    <Link className="text-decoration-none text-success" to="" ><i className="far fa-envelope"></i> <span>fetmeal@gmail.com</span></Link>   <br /><br />
+                    <Link className="text-decoration-none text-success" to="" ><i className="fas fa-phone-alt"></i> <span>+310415130654</span></Link> <br /><br />
+                    <Link className="text-decoration-none text-success" to="" ><i className="fas fa-map-marker-alt"></i> <span>Dhaka Bangladesh</span></Link>
                 </div>
                 <div className="col-md-4">
-                    <Link className="text-success fs-2 m-2" href=""><i className="fab fa-youtube"></i></Link>
-                    <Link className="text-success fs-2 m-2" href=""><i className="fab fa-facebook"></i></Link>
-                    <Link className="text-success fs-2 m-2" href=""><i className="fab fa-twitter"></i></Link>
-                    <Link className="text-success fs-2 m-2" href=""><i className="fab fa-instagram"></i></Link>
-                    <Link className="text-success fs-2 m-2" href=""><i className="fab fa-facebook-messenger"></i></Link>
+                    <Link className="text-success fs-2 m-2" to="https://www.youtube.com/user/youtube"><i className="fab fa-youtube"></i></Link>
+                    <Link className="text-success fs-2 m-2" to="https://www.facebook.com/login/"><i className="fab fa-facebook"></i></Link>
+                    <Link className="text-success fs-2 m-2" to="https://twitter.com/twitter"><i className="fab fa-twitter"></i></Link>
+                    <Link className="text-success fs-2 m-2" to="https://www.instagram.com/"><i className="fab fa-instagram"></i></Link>
+                    <Link className="text-success fs-2 m-2" to="https://www.messenger.com/"><i className="fab fa-facebook-messenger"></i></Link>
                 </div>
             </div>
 

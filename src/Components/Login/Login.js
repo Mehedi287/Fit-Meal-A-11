@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link, useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 import useAuth from '../../Hook/UseAuth';
 
 import "./Login.css"
@@ -42,8 +42,8 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <div className="main">
+        <div className="container">
+            <div className="main col-md-6">
                 <p className="sign" align="center">Sign in</p>
                 <form className="form1" />
                 <input className="un " type="email" onBlur={getEmail} align="center" placeholder="Email" />

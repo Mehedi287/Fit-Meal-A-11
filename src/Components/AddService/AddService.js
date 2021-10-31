@@ -3,7 +3,7 @@ import "./AddService.css"
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 const AddService = () => {
-    const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
+    const { register, handleSubmit, reset, formState: { } } = useForm();
     const onSubmit = data => {
         axios.post("https://warm-taiga-38086.herokuapp.com/foods", data)
             .then(res => {
@@ -15,9 +15,9 @@ const AddService = () => {
     };
 
     return (
-        <div>
+        <div className="container">
             <h1 className="text-success">add a service</h1>
-            <div className="main text-success ">
+            <div className="main text-success col-md-6">
                 <p className="sign " align="center"> Add a service</p>
                 <form className="form1" onSubmit={handleSubmit(onSubmit)}>
                     {/* register your input into the hook by invoking the "register" function */}
