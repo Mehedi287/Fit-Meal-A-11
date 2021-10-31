@@ -8,7 +8,7 @@ const Home = () => {
 
     const [foods, setFoods] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/foods")
+        fetch("https://warm-taiga-38086.herokuapp.com/foods")
             .then(res => res.json())
             .then(data => setFoods(data))
 
@@ -103,15 +103,15 @@ const Home = () => {
                     </div>
                     <div className="col-md-3">
                         <img className="img-fluid  delivery-man" src="https://img.freepik.com/free-photo/young-handsome-delivery-man-with-face-mask_1258-16299.jpg?size=338&ext=jpg" alt="" />
-                        <h3>Mr Binn</h3>
+                        <h3>Mr Badimma</h3>
                     </div>
                     <div className="col-md-3">
                         <img className="img-fluid delivery-man " src=" https://img.freepik.com/free-photo/young-delivery-girl-blue-uniform-cap-holding-cardboard-box-her-shoulder-smilin-showing-thumbs-up-standing-orange-wall_141793-63730.jpg?size=338&ext=jpg" alt="" />
-                        <h3>Mr Binn</h3>
+                        <h3>Mr Dildar</h3>
                     </div>
                     <div className="col-md-3">
                         <img className="img-fluid delivery-man " src=" https://img.freepik.com/free-psd/free-non-stop-delivery-man-pointing-box_23-2148462371.jpg?size=338&ext=jpg" alt="" />
-                        <h3>Mr Binn</h3>
+                        <h3>Mr Hero  Alom</h3>
                     </div>
 
                 </div>

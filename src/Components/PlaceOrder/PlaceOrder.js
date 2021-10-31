@@ -14,7 +14,7 @@ const PlaceOrder = () => {
     const [order, setOrder] = useState({});
     // get a single data 
     useEffect(() => {
-        fetch(`http://localhost:5000/foods/${id}`)
+        fetch(`https://warm-taiga-38086.herokuapp.com/foods/${id}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -23,7 +23,7 @@ const PlaceOrder = () => {
         data.img = order.img;
         data.name = order.name;
         console.log(data);
-        axios.post("http://localhost:5000/orders", data)
+        axios.post("https://warm-taiga-38086.herokuapp.com/orders", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("Order  successfully")

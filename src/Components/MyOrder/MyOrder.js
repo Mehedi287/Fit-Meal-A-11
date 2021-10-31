@@ -8,13 +8,13 @@ const MyOrder = () => {
     const { user } = useAuth()
     const [food, setFood] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://warm-taiga-38086.herokuapp.com/orders/${user.email}`)
             .then(res => res.json())
             .then(data => setFood(data))
     }, [])
     console.log(food);
     const handleDelete = id => {
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://warm-taiga-38086.herokuapp.com/orders/${id}`)
             .then(res => {
                 if (res.data.deletedCount) {
                     const remain = food.filter(f => f._id !== id);

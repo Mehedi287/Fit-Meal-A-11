@@ -5,7 +5,7 @@ import axios from 'axios';
 const AddService = () => {
     const { register, handleSubmit, watch, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
-        axios.post("http://localhost:5000/foods", data)
+        axios.post("https://warm-taiga-38086.herokuapp.com/foods", data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert("add successfully")

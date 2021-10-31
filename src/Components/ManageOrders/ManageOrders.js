@@ -4,12 +4,12 @@ import "./ManageOrders.css"
 const ManageOrders = () => {
     const [info, setInfo] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://warm-taiga-38086.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setInfo(data))
     }, [])
     const handleDelete = id => {
-        axios.delete(`http://localhost:5000/orders/${id}`)
+        axios.delete(`https://warm-taiga-38086.herokuapp.com/orders/${id}`)
             .then(res => {
                 if (res.data.deletedCount) {
                     const remain = info.filter(f => f._id !== id);
