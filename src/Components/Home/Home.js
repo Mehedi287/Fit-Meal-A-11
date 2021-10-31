@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Carousel, Spinner } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+
 import Foods from '../Foods/Foods';
 import "./Home.css"
 const Home = () => {

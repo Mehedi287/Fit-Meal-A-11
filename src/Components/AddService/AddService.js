@@ -12,8 +12,6 @@ const AddService = () => {
                     reset()
                 }
             })
-
-
     };
 
     return (
@@ -27,8 +25,6 @@ const AddService = () => {
                     <input className="un"   {...register("decription")} placeholder="Decription" /> <br />
                     <input className="un"  {...register("img")} placeholder="Img Url" /><br />
                     {/* include validation with required or other standard HTML validation rules */}
-
-
                     <input className="button-33 mt-3" value="ADD" type="submit" />
                 </form>
             </div>

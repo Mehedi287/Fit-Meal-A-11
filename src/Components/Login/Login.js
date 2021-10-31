@@ -35,8 +35,6 @@ const Login = () => {
 
             .then(result => {
                 history.push(redirect_uri)
-
-
             })
             .catch((error) => {
                 setError(error.message)
@@ -47,18 +45,14 @@ const Login = () => {
         <div>
             <div className="main">
                 <p className="sign" align="center">Sign in</p>
-
                 <form className="form1" />
                 <input className="un " type="email" onBlur={getEmail} align="center" placeholder="Email" />
                 <input className="pass" type="password" onBlur={getPassword} align="center" placeholder="Password" />
                 <button onClick={handleSubmit} className="myButton mt-3">Login</button><br />
                 _____or_____ <br />
                 <p className="myButton" onClick={hadleGoogleLogin}>Sign in With Google</p><br />
-
-
-
             </div>
-        </div >
+        </div>
     );
 };
 
