@@ -18,6 +18,7 @@ const Login = () => {
         setEmail(email)
         e.target.value = "";
     }
+    // get password 
     const getPassword = (e) => {
         const password = e.target.value;
         setPassword(password)

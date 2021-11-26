@@ -34,37 +34,39 @@ const PlaceOrder = () => {
     }
     // console.log(user);
     return (
-        <div className="row container mt-5">
-            <div className="col-md-6 d-block mt-5">
-                <h2 className="mt-4">Place Order </h2>
-                <div className="">
-                    <h2>{order.name}</h2>
-                    <img className="img-fluid" src={order.img} alt="" />
-                    <p>{order.decription}</p>
-                </div>
-            </div>
-            {
-                order.name ? <div className="col-md-6 d-block">
-                    <div className="main  perses">
-                        <p className="sign " align="center">Plase Purchase</p>
-                        <form className="form1" onSubmit={handleSubmit(onSubmit)}>
-                            {/* register your input into the hook by invoking the "register" function */}
-                            <input className="un " defaultValue={order.name} {...register("itemName")} /><br />
-                            <input className="un " defaultValue={user.email} {...register("email")} /> <br />
-                            <input className="un " defaultValue={user.displayName} {...register("uerName")} /><br />
-                            <input placeholder="Address" className="un" {...register("address", { required: true })} /><br />
-
-                            {/* include validation with required or other standard HTML validation rules */}
-                            <input placeholder="description" className="un" {...register("description", { required: true })} /><br />
-                            {/* errors will return when field validation fails  */}
-                            {errors.exampleRequired && <span>This field is required</span>}
-
-                            <input className="button-33 mt-3" value="Purchase" type="submit" />
-                        </form>
+        <div className="container">
+            <div className="row  mt-5">
+                <div className="col-md-6 d-block mt-5">
+                    <h2 className="mt-4">Place Order </h2>
+                    <div className="">
+                        <h2>{order.name}</h2>
+                        <img className="img-fluid" src={order.img} alt="" />
+                        <p>{order.decription}</p>
                     </div>
+                </div>
+                {
+                    order.name ? <div className="col-md-6 d-block">
+                        <div className="main  perses">
+                            <p className="sign " align="center">Plase Purchase</p>
+                            <form className="form1" onSubmit={handleSubmit(onSubmit)}>
+                                {/* register your input into the hook by invoking the "register" function */}
+                                <input className="un " defaultValue={order.name} {...register("itemName")} /><br />
+                                <input className="un " defaultValue={user.email} {...register("email")} /> <br />
+                                <input className="un " defaultValue={user.displayName} {...register("uerName")} /><br />
+                                <input placeholder="Address" className="un" {...register("address", { required: true })} /><br />
 
-                </div> : <p>loading...</p>
-            }
+                                {/* include validation with required or other standard HTML validation rules */}
+                                <input placeholder="description" className="un" {...register("description", { required: true })} /><br />
+                                {/* errors will return when field validation fails  */}
+                                {errors.exampleRequired && <span>This field is required</span>}
+
+                                <input className="button-33 mt-3" value="Purchase" type="submit" />
+                            </form>
+                        </div>
+
+                    </div> : <p>loading...</p>
+                }
+            </div>
         </div>
     );
 };
